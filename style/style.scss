@@ -1,5 +1,10 @@
-$fonts: 'Poppins', Helvertica, sans-serif;
-$primary-color: #ab99ca;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+ 
+$fonts: 'Outfit', sans-serif;
+$base-color: #FFF;
+$primary-color: #d6e2f0;
+$title-color: #1f3251;
+$paragraph-color: #7b879d;
 $spacing: 2rem;
    
 body {
@@ -10,4 +15,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card{
+    max-width: 300px;
+    background-color: $base-color;
+    border-radius: 20px;
+    padding: 20px;
+    .card-header, .card-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card-header{
+        .qr-code{
+            border-radius: 100px;
+            img{
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
+    }
+    .card-body{
+        text-align: center;
+        padding: 10px 14px;
+        h1{
+            color: $title-color;
+        }
+        p{
+            font-size: 15px;
+            color: $paragraph-color;
+        }
+    }
 }

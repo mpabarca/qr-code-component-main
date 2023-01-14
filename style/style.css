@@ -1,9 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 body {
-  font-family: "Poppins", Helvertica, sans-serif;
-  background-color: #ab99ca;
+  font-family: "Outfit", sans-serif;
+  background-color: #d6e2f0;
   padding: 2rem;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.card {
+  max-width: 300px;
+  background-color: #FFF;
+  border-radius: 20px;
+  padding: 20px;
+}
+.card .card-header, .card .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card .card-header .qr-code {
+  border-radius: 100px;
+}
+.card .card-header .qr-code img {
+  border-radius: 10px;
+  width: 100%;
+}
+.card .card-body {
+  text-align: center;
+  padding: 10px 14px;
+}
+.card .card-body h1 {
+  color: #1f3251;
+}
+.card .card-body p {
+  font-size: 15px;
+  color: #7b879d;
 }/*# sourceMappingURL=style.css.map */
